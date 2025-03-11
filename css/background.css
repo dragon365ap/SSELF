@@ -1,0 +1,109 @@
+.background {
+    background: url('../bgsample.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* Centered text box */
+.content-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+/* Widths */
+.content-box-sm {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.content-box-md {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.content-box-lg {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 800px; /* Make it fill the column */
+}
+
+/* Center Positioned Box */
+.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+}
+
+/* Center Left Positioned Box */
+.center-left-box {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); /* Centers vertically */
+}
+
+/* Center Right Positioned Box */
+.center-right-box {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* Top Right Positioned Box */
+.top-right-box {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+/* Top Left Positioned Box */
+.top-left-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.top-center-box {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+/* Bottom Right Positioned Box */
+.bottom-right-box {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Bottom Left Positioned Box */
+.bottom-left-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-center-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
