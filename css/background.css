@@ -12,6 +12,7 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
+    margin-bottom: 20px;
 }
 
 /* Widths */
@@ -22,6 +23,7 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+    margin-bottom: 20px;
 }
 
 .content-box-md {
@@ -31,6 +33,7 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
+    margin-bottom: 20px;
 }
 
 .content-box-lg {
@@ -40,6 +43,13 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 800px; /* Make it fill the column */
+    margin-bottom: 20px;
+}
+
+.v-center{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Center Positioned Box */
