@@ -1,11 +1,21 @@
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0c2c6c;
 }
 
 h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0c2c6c;
 }
 
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.txt {
+    color: black;
+}
+
+.txt.white {
+    color: white;
 }
