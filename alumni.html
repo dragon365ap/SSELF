@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/content-box.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/img.css">
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all elements with the .content-box class
+            const boxes = document.querySelectorAll("content-box");
+
+
+            function checkScroll() {
+                boxes.forEach(box => {
+                    // Get the position of the box relative to the viewport
+                    const boxTop = box.getBoundingClientRect().top;
+                    const boxVisible = window.innerHeight - 100; // Trigger when 100px from bottom of viewport
+
+                    if (boxTop < boxVisible) {
+                        box.classList.add("show");  // Add the 'show' class to trigger the animation
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", checkScroll);
+            checkScroll();  // Run the function on page load in case elements are already in view
+        });
+    </script>
+    <title>Alumni</title>
+</head>
+
+<body>
+    <div class="container-fluid text-center py-5">
+        <div class="container">
+            <h1>Header</h1>
+            <p>Model design off of <a
+                href="https://www.nursing.upenn.edu/alumni/meet-our-alumni/">https://www.nursing.upenn.edu/alumni/meet-our-alumni/D</a>
+        </p>
+        </div>
+    </div>
+    <div class="container-fluid text-center bg blue">
+        <div class="container txt white">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">EITC</a></li>
+                <li><a class="active" href="#">Alumni</a></li>
+                <li><a href="sample-info-page.html">Sample</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg black">
+        <div class="bg white container">
+            <div class="seperator"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <content-box class="md hidden">
+                            <h2>John Doe</h2>
+                            <img src="dogsample.jpg" class="square rounded" alt="John Doe" style="width: 100%;">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatum quia illo vel
+                                itaque voluptas, inventore nam porro, minus hic iste, odit recusandae quibusdam suscipit
+                                praesentium provident quaerat atque facere?</p>
+                        </content-box>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <content-box class="md hidden">
+                            <h2>John Doe</h2>
+                            <img src="pandasample.jpg" class="square rounded" alt="John Doe" style="width: 100%;">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatum quia illo vel
+                                itaque voluptas, inventore nam porro, minus hic iste, odit recusandae quibusdam suscipit
+                                praesentium provident quaerat atque facere?</p>
+                        </content-box>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <content-box class="md hidden">
+                            <h2>John Doe</h2>
+                            <img src="monkeysample.jfif" class="square rounded" alt="John Doe" style="width: 100%;">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatum quia illo vel
+                                itaque voluptas, inventore nam porro, minus hic iste, odit recusandae quibusdam suscipit
+                                praesentium provident quaerat atque facere?</p>
+                        </content-box>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <content-box class="md hidden">
+                            <h2>John Doe</h2>
+                            <img src="dogsample.jpg" class="square rounded" alt="John Doe" style="width: 100%;">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatum quia illo vel
+                                itaque voluptas, inventore nam porro, minus hic iste, odit recusandae quibusdam suscipit
+                                praesentium provident quaerat atque facere?</p>
+                        </content-box>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <content-box class="md hidden">
+                            <h2>John Doe</h2>
+                            <img src="pandasample.jpg" class="square rounded" alt="John Doe" style="width: 100%;">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatum quia illo vel
+                                itaque voluptas, inventore nam porro, minus hic iste, odit recusandae quibusdam suscipit
+                                praesentium provident quaerat atque facere?</p>
+                        </content-box>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <content-box class="md hidden">
+                            <h2>John Doe</h2>
+                            <img src="monkeysample.jfif" class="square rounded" alt="John Doe" style="width: 100%;">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatum quia illo vel
+                                itaque voluptas, inventore nam porro, minus hic iste, odit recusandae quibusdam suscipit
+                                praesentium provident quaerat atque facere?</p>
+                        </content-box>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
