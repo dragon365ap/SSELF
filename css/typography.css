@@ -19,3 +19,9 @@ p {
 .txt.white {
     color: white;
 }
+
+.blueGone,
+.blueGone:hover {
+    text-decoration: none;
+    color: black;
+}
