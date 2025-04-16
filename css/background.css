@@ -1,8 +1,40 @@
 .background {
-    background: url('../bgsample.jpeg') no-repeat center center/cover;
     height: 100vh;
     position: relative;
     z-index: -1;
+}
+
+.background-image {
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    /* This makes the image cover the entire container */
+    filter: blur(0px);
+}
+
+.background-image.blur {
+    filter: blur(3px);
+}
+
+.fixed-background {
+    background: url('../bgsample2.jpg') no-repeat center;
+    /* Replace with the path to your image */
+    background-attachment: fixed;
+    /* This is the magic that makes it stay put! */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from tiling */
+    background-size: cover;
+    /* Makes the image cover the entire background */
+    height: 100%;
+    /* Make sure the background covers the full screen */
+    position: relative;
+    /* Important for layering content on top */
+    z-index: 0;
+    /* Puts the background behind other content by default */
 }
 
 .bg {
@@ -18,7 +50,7 @@
 }
 
 .bg.blue {
-    background-color:#0c2c6c;
+    background-color: #0c2c6c;
 }
 
 .seperator {
@@ -27,6 +59,7 @@
     border-right: 100vw solid transparent;
     border-bottom: 6vw solid transparent;
 }
+
 .seperator-white {
     width: 0;
     height: 0;
@@ -35,6 +68,7 @@
     margin-top: -13vw;
     z-index: 1;
 }
+
 .seperator-black {
     width: 0;
     height: 0;
